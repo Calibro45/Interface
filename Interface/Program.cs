@@ -26,10 +26,12 @@
 
             foreach (var f in listaFIgure)
             {
-                Console.WriteLine(
-                    $"Il perimetro del {f.GetType().Name} è {f.Perimetro()}" + " " +
-                    $"L'Area del {f.GetType().Name} è {f.Area()}\n"
-                    );
+                //Console.WriteLine(
+                //    $"Il perimetro del {f.GetType().Name} è {f.Perimetro()}" + " " +
+                //    $"L'Area del {f.GetType().Name} è {f.Area()}\n"
+                //    );
+
+                Console.WriteLine(f.StampaInfo() + "\n");
             }
         }
     }

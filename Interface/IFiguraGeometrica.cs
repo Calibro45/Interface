@@ -10,5 +10,6 @@ namespace Interface
     {
         double Perimetro();
         double Area();
+        string StampaInfo();
     }
 }

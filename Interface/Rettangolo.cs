@@ -26,5 +26,11 @@ namespace Interface
             var area = Lato * Altezza;
             return area;
         }
+
+        public override string StampaInfo()
+        {
+            var mess = $"L'altezza misua: {Altezza}";
+            return base.StampaInfo() + mess;
+        }
     }
 }
