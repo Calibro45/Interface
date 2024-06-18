@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-    internal class Quadrato
+    public class Quadrato : FiguraGeometrica
     {
+        public Quadrato(double l) : base(l) 
+        {
+            
+        }
+
+        public override double Perimetro()
+        {
+            var perimetro = Lato * 4;
+            return perimetro;
+        }
+
+        public override double Area()
+        {
+            var Area = Lato * Lato;
+            return Area;
+        }
+
     }
 }

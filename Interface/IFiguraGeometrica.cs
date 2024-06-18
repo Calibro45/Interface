@@ -8,5 +8,7 @@ namespace Interface
 {
     internal interface IFiguraGeometrica
     {
+        double Perimetro();
+        double Area();
     }
 }

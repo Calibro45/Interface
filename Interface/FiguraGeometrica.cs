@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-    internal class FiguraGeometrica
+        public abstract class FiguraGeometrica : IFiguraGeometrica
     {
+        public double Lato { get; set; }
+
+        public FiguraGeometrica(double lato)
+        {
+            Lato = lato;
+        }
+
+        public abstract double Perimetro();
+        public abstract double Area();
     }
 }
