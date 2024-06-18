@@ -7,6 +7,7 @@
             Console.WriteLine("Interfacce");
             var q = new Quadrato(5);
             var r = new Rettangolo(5, 10);
+            IFiguraGeometrica quadrato = new Quadrato(3);
 
             var qp = q.Perimetro();
             var qa = q.Area();

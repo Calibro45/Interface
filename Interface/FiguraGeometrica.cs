@@ -19,7 +19,10 @@ namespace Interface
         public abstract double Area();
         public virtual string StampaInfo()
         {
-            var messaggio = $"Il {GetType().Name} ha un perimetro di: {Perimetro()}, L'area è: {Area()}, il lato misura: {Lato} ";
+            var perimetro = Perimetro();
+            var area = Area();
+            var messaggio = $"Il {GetType().Name} ha un perimetro di: {perimetro}, L'area è: {area}, il lato misura: {Lato} ";
+
             return messaggio;
         }
     }
