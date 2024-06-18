@@ -21,7 +21,8 @@ namespace Interface
         {
             var perimetro = Perimetro();
             var area = Area();
-            var messaggio = $"Il {GetType().Name} ha un perimetro di: {perimetro}, L'area è: {area}, il lato misura: {Lato} ";
+            var nome = GetType().Name;
+            var messaggio = $"Il {nome} ha un perimetro di: {perimetro}, L'area è: {area}, il lato misura: {Lato} ";
 
             return messaggio;
         }
